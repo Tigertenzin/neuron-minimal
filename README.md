@@ -10,6 +10,7 @@ Publication: Physical Review Research 3, 013107 (2021).
 ## Model description
 
 The neutral model of neurons consists of $N$ neurons which are fully connected. Every neuron interacts with every other neuron. Each neuron can be either inactive, $I$, or active $A_k$, where the index $k$ denotes the avalanche label. In the Figure, different colors correspond to different causally-connected avalanches. The stochastic dynamics of the avalanches are described by rate equations. A new avalanche with a new label is triggered at the _driving rate_, $\epsilon$. An avalanche increases in size at the _propagation rate_, $\lambda$, as inactive neurons are triggered by active neurons. Active neurons become inactive at the _decay rate_, $\mu$. The rate equations describing the NMN~\cite{MNM_OP} are 
+
 \begin{align}
 	I & \xrightarrow[]{\epsilon}  A_{{\rm max}[k]+1}
 	\\
@@ -17,6 +18,7 @@ The neutral model of neurons consists of $N$ neurons which are fully connected. 
 	\\
 	A_k & \xrightarrow[]{\mu}  I
 \end{align}
+
 An avalanche ends when all neurons with a given label $k$ become inactive. The avalanche size $S$ is the number of activations and the avalanche duration $D$ is the time between the activation of the first neuron with label $k$ to when all neurons with index $k$ become inactive. 
 
 ![Model Diagram](./model.png)

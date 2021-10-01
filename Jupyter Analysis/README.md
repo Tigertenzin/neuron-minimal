@@ -1,2 +1,3 @@
-# neuron-minimal
-Simulation and analysis code for the minimal neuron model. 
+# Jupyter Notebooks
+
+The notebooks are for analyzing the simulation results. 
